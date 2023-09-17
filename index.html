@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Crypto Token Website</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.container {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 10PX;
+    background: linear-gradient(to bottom, #0066ff, #0044cc);
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 50px;
+    margin-left: 30px;
+    padding-bottom: 10px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    background-image: url('bitcoin1.gif');
+    background-size:cover;
+    height: 420px;
+    color:white;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+#hero h2 {
+    margin-top: 7cm;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #00cc66;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #00994d;
+}
+
+#about {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(to bottom, #010205, #0044cc,black);
+    padding: 60px 0;
+    text-align: justify;
+}
+p{
+    color: white;
+    padding-bottom: 20px;
+}
+#about h2 {
+    font-size: 36px;
+    text-align: left;
+    color:white;
+    margin-bottom: 10px;
+}
+
+#features {
+    background-image: url(features.gif);
+    background-size:cover;
+    
+    padding: 60px 0;
+}
+
+.feature {
+    margin-bottom: 30px;
+    text-align: left;
+    text-align: justify;
+}
+
+.feature h3 {
+    font-size: 30px;
+    color: #f7f5f5;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #b0abab;
+    font-size: 18px;
+}
+#feat-head{
+    font-size:60px;
+    padding-bottom: 30px;
+    text-align: center;
+    color:whitesmoke;
+
+}
+
+#team {
+    background: linear-gradient(to bottom, #010205, #0044cc);
+    padding: 60px 0;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-member img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 4px solid #00cc66;
+
+}
+
+.team-member h3 {
+    font-size: 24px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.team-member p {
+    padding-top: 20px;
+    color: #aaa;
+    text-align: justify;
+}
+
+#contact {
+    font-size: 15px;
+    color: white;
+    background: linear-gradient(to bottom, #010205, #0044cc);
+    padding: 60px 1px;
+}
+
+#contact a {
+    display: block;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+footer {
+    background: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+marquee{
+  color : whitesmoke;
+  background: linear-gradient(to bottom, #0066ff, #0044cc);
+  
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  
+    }
+    main {
+    background-image: url(bgimage1.gif);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.earning-card {
+    background:linear-gradient(to bottom,rgb(3, 46, 175),rgb(10, 209, 189));
+   
+    box-shadow: 0 4px 8px rgba(152, 148, 148, 0.2);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+.bottomlink{
+    text-decoration: none;
+    color:white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .logo h1 {
+        font-size: 36px;
+    }
+
+    nav ul {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    #hero {
+        padding: 80px 0;
+    }
+
+    #hero h2 {
+        font-size: 32px;
+    }
+
+    .cta-button {
+        margin-top: 20px;
+    }
+
+    #about h2 {
+        font-size: 24px;
+    }
+
+    .feature h3 {
+        font-size: 20px;
+    }
+}
+
+
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <h1>CryptoVerse</h1>
+                </div>
+                <ul class="menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+
+    <section id="hero">
+    <div class="container">
+      <h2>Welcome to CryptoVerse</h2>
+      <p>Your gateway to the future of finance.</p>
+       <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </section>
+    <marquee scrollamount="15" height="35px">CryptoVerse &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;CryptoVerse&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;CryptoVerse
+        &nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;CryptoVerse</marquee>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+               
+
+            <p> Welcome to Crypto Verse, your gateway to the world of cryptocurrency and blockchain technology.
+                 We're passionate about the transformative power of digital assets and decentralized finance, 
+                 and we're here to guide you on your journey into this exciting and dynamic universe.
+                </p>
+                <h2>
+                Our Mission</h2>
+                <p>
+                At Crypto Verse, our mission is to empower individuals and businesses with the knowledge and
+                 tools they need to navigate the crypto space confidently. We believe that blockchain 
+                 technology has the potential to reshape industries, democratize finance, and foster innovation
+                  on a global scale. Our goal is to make this complex and evolving ecosystem accessible to 
+                  everyone.
+            </p>
+            
+            
+              
+               <h2> Get Started with Crypto Verse
+            </h2>
+               <p> Whether you're looking to buy your first Bitcoin, explore the world of decentralized finance (DeFi), or launch your own blockchain project, Crypto Verse is your trusted partner on this exciting journey.
+               </p>
+               <p> Join us in exploring the endless possibilities of the crypto-verse. Together, we'll unlock 
+                the future of finance, one block at a time. 
+                Thank you for choosing Crypto Verse as your crypto companion. Let's navigate the crypto-sphere
+                 together!</p>
+               </p>
+            </div>
+    </section>
+    <main>
+        <section class="earning-card">
+            <h2><font color="white">Bitcoin Earnings</h2>
+            <p>Your current balance: 0.005 BTC</p>
+            <button>Claim Earnings</button>
+        </section>
+        <section class="earning-card">
+            <h2>Ethereum Earnings</h2>
+            <p>Your current balance: 0.00   2 ETH</p>
+            <button>Claim Earnings</button>
+        </font>
+        </section>
+    </main>
+
+    <section id="features">
+        <div class="container">
+            <h1 id="feat-head">Features</h1>
+            <div class="feature">
+                <h3>1. Expertise:</h3>
+                <p> At Crypto Verse, our commitment to expertise sets us apart. Our team comprises seasoned
+                     cryptocurrency enthusiasts, analysts, and experts who have immersed themselves in the 
+                     world of blockchain technology and digital assets for years. We bring this wealth of
+                      knowledge to you, our valued users, ensuring that you have access to accurate, 
+                      up-to-date, and insightful information. </p>
+            </div>
+            <div class="feature">
+                <h3>2. Educational Resources:</h3>
+                <p>Education is at the core of our mission at Crypto Verse. We understand that the 
+                    crypto landscape can be daunting, especially for beginners. That's why we've curated
+                     a comprehensive library of educational resources that caters to all levels of expertise.
+                      Our collection includes user-friendly guides, video tutorials, in-depth articles, and 
+                      interactive courses. Whether you're seeking to understand the fundamentals of blockchain 
+                      technology, explore the intricacies of different cryptocurrencies, or master trading 
+                      strategies, Crypto Verse's educational materials provide a structured and accessible
+                       path to knowledge. We believe that education is the key to empowerment in the crypto 
+                       sphere, and we're committed to equipping you with the tools you need to make informed 
+                       decisions.</p>
+            </div>
+            <div class="feature">
+                <h3>3. Security Commitment:</h3>
+                <p>Security is paramount in the world of cryptocurrency. At Crypto Verse, we take the safety 
+                    of your assets and personal information seriously. Our platform adheres to industry-standard
+                     security practices, including robust encryption, multi-factor authentication, and cold storage
+                      solutions to safeguard your digital assets. We understand that trust is earned through 
+                      reliability and security, and we're committed to providing you with a secure environment 
+                      for all your crypto-related activities. Rest assured that when you choose Crypto Verse,
+                       you're choosing a platform that prioritizes your peace of mind.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <h2 id="feat-head">Our Team</h2>
+            <div class="team-member">
+                <img src="profile1.jpg">
+                <h3>John Doe
+                <br> CEO</h3>
+                <p>john Doe is the visionary leader at the helm of Crypto Verse, guiding the company with a 
+                    deep passion for cryptocurrencies and a profound understanding of blockchain technology.
+                     As the Chief Executive Officer of Crypto Verse, John brings a wealth of experience and
+                      expertise to the forefront of the cryptocurrency landscape.Under John's leadership, 
+                      Crypto Verse has evolved into a trusted and influential platform that serves as a beacon 
+                      of knowledge and empowerment for crypto enthusiasts and newcomers alike. His commitment
+                       to excellence, coupled with his dedication to security and education, has been 
+                       instrumental in shaping Crypto Verse into the resourceful and welcoming community
+                        that it is today.
+                   John's vision for Crypto Verse extends beyond the boundaries of a typical cryptocurrency
+                    website. He envisions it as a dynamic ecosystem that not only provides users with valuable
+                     insights but also fosters a sense of belonging and collaboration within the crypto community. John understands that, in this rapidly evolving landscape, staying informed and connected is paramount, and he strives to ensure that Crypto Verse remains at the forefront of these endeavors.</p>
+            
+                <img src="profile2.jpg">
+                <h3>Jane Smith
+                <br> CTO</h3>
+                <p>Jane Smith is the driving technological force at Crypto Verse, serving as the company's 
+                    Chief Technology Officer. With a background in computer science and a passion for 
+                    blockchain innovation, Jane leads the technical development and innovation efforts of
+                     Crypto Verse. Her journey in the crypto sphere has been marked by a deep fascination
+                      with the potential of blockchain technology to revolutionize industries. Jane's 
+                      expertise extends from developing cutting-edge blockchain solutions to ensuring the 
+                      security and scalability of the Crypto Verse platform. She plays a pivotal role in 
+                      shaping the platform's technical architecture and infrastructure to provide users with 
+                      a seamless and secure experience. Jane's commitment to innovation, coupled with her 
+                      drive to stay at the forefront of technological advancements, ensures that Crypto Verse
+                       remains a forward-thinking and dynamic platform for users exploring the world of 
+                       cryptocurrencies and blockchain. Her dedication to creating a secure and user-friendly 
+                       environment is instrumental in Crypto Verse's mission to empower individuals and
+                        businesses on their crypto journey.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+        <h1>Contact Us</h2>
+        <br><br>
+        <p>If you have any questions or inquiries, please contact us at <br><br> Phone Number : +91 97 1234 4582</p>
+        <a href="mailto:contact@cryptoverse.com">Mail : contact@Cryptoverse.com</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <a href="#" class="bottomlink">Home</a> | <a href="#" class="bottomlink">contact</a>
+            <p>Copyright © 2023, Crypto Verse.
+                <br>All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
